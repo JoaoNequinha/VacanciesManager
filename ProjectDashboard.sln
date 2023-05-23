@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.API", "Services\Dashboard\Dashboard.API\Dashboard.API.csproj", "{DEE06E64-F8AB-488C-A33F-775D59F9EC5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FA47CD77-702C-457A-A1A5-73AA61D7B99E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dashboard", "Dashboard", "{AC7AFCA8-3267-4890-B4C6-461FA1843CEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.API.Tests.Integration", "Services\Dashboard\Dashboard.API.Tests.Integration\Dashboard.API.Tests.Integration.csproj", "{266594D9-F90B-4177-824D-303020686724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.API.Tests.Unit", "Services\Dashboard\Dashboard.API.Tests.Unit\Dashboard.API.Tests.Unit.csproj", "{C38C8632-9A29-41FE-9B13-D45286EB3BAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28FCA6D8-0248-43ED-B3AF-B9FD108BD343}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelmCharts", "HelmCharts", "{DD82063B-2EAC-4A66-94F3-B069B8EE8957}"
+	ProjectSection(SolutionItems) = preProject
+		net-chart\.helmignore = net-chart\.helmignore
+		net-chart\Chart.yaml = net-chart\Chart.yaml
+		net-chart\values.yaml = net-chart\values.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{7BE295D6-A390-49D3-8D12-5ED144464ADC}"
+	ProjectSection(SolutionItems) = preProject
+		net-chart\templates\deployment.yaml = net-chart\templates\deployment.yaml
+		net-chart\templates\service.yaml = net-chart\templates\service.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Domain", "Services\Dashboard\Dashboard.Domain\Dashboard.Domain.csproj", "{91C28A6A-CA96-4159-990B-CED99105B103}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure", "Services\Dashboard\Dashboard.Infrastructure\Dashboard.Infrastructure.csproj", "{337AAD69-EDC6-4266-915D-7F6A8FD97BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Domain.Tests.Unit", "Services\Dashboard\Dashboard.Domain.Tests.Unit\Dashboard.Domain.Tests.Unit.csproj", "{EE548739-0B19-46FD-BA2D-7E1706B3F675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEE06E64-F8AB-488C-A33F-775D59F9EC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE06E64-F8AB-488C-A33F-775D59F9EC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE06E64-F8AB-488C-A33F-775D59F9EC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE06E64-F8AB-488C-A33F-775D59F9EC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266594D9-F90B-4177-824D-303020686724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266594D9-F90B-4177-824D-303020686724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266594D9-F90B-4177-824D-303020686724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266594D9-F90B-4177-824D-303020686724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38C8632-9A29-41FE-9B13-D45286EB3BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38C8632-9A29-41FE-9B13-D45286EB3BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38C8632-9A29-41FE-9B13-D45286EB3BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38C8632-9A29-41FE-9B13-D45286EB3BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C28A6A-CA96-4159-990B-CED99105B103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C28A6A-CA96-4159-990B-CED99105B103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C28A6A-CA96-4159-990B-CED99105B103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C28A6A-CA96-4159-990B-CED99105B103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337AAD69-EDC6-4266-915D-7F6A8FD97BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337AAD69-EDC6-4266-915D-7F6A8FD97BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337AAD69-EDC6-4266-915D-7F6A8FD97BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337AAD69-EDC6-4266-915D-7F6A8FD97BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE548739-0B19-46FD-BA2D-7E1706B3F675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE548739-0B19-46FD-BA2D-7E1706B3F675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE548739-0B19-46FD-BA2D-7E1706B3F675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE548739-0B19-46FD-BA2D-7E1706B3F675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEE06E64-F8AB-488C-A33F-775D59F9EC5D} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+		{AC7AFCA8-3267-4890-B4C6-461FA1843CEB} = {FA47CD77-702C-457A-A1A5-73AA61D7B99E}
+		{266594D9-F90B-4177-824D-303020686724} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+		{C38C8632-9A29-41FE-9B13-D45286EB3BAD} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+		{7BE295D6-A390-49D3-8D12-5ED144464ADC} = {DD82063B-2EAC-4A66-94F3-B069B8EE8957}
+		{91C28A6A-CA96-4159-990B-CED99105B103} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+		{337AAD69-EDC6-4266-915D-7F6A8FD97BF7} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+		{EE548739-0B19-46FD-BA2D-7E1706B3F675} = {AC7AFCA8-3267-4890-B4C6-461FA1843CEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EE8CF17-CF8C-4E6E-BFC5-2F2BB2B777B4}
+	EndGlobalSection
+EndGlobal

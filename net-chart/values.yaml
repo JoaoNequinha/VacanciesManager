@@ -1,0 +1,13 @@
+deployment:
+   name: net-api
+   cport: 80
+   replicas: 1
+   image.tag: latest
+   constr:
+     name: CONNECTION_STRING
+     secret:
+       name: net-constr-secret
+       key: CONNECTION_STRING
+
+service:
+  port: 80
